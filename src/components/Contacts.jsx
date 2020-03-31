@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Contact = (props) => (
     <div className="Contact">
@@ -12,6 +13,12 @@ const Contact = (props) => (
         </div>
     </div>
 );
+
+Contact.propTypes = {
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    online: PropTypes.bool
+}
 
 
 export default Contact;
