@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const users = [
     {
       name: 'Robert Reyes',
@@ -25,6 +27,12 @@ const users = [
       online: true
     }
   ];
+
+users.propTypes = {
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  online: PropTypes.bool.isRequired,
+}
 
 
 export default users;

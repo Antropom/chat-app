@@ -14,7 +14,7 @@ const Contact = () => (
                     </div>
                 </div>
             </div>
-        ))};
+        ))}
     </ul>
 );
 
